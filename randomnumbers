@@ -6,7 +6,6 @@ last_num = int(input("enter your last number:")) #length
 random_num = [random.randint(0, last_num) for _ in range(last_num)]
 print(random_num)
 
-## 
 
 import math 
 
@@ -58,7 +57,7 @@ elif choose_operation == nine:
     greater_solution = [i for i in random_num if i > greater_num]
     print(greater_solution)
 
-elif choose_operation = ten:
+elif choose_operation == ten:
     less_num = int(input("give value: "))
     less_solution = [i for i in random_num if i < less_num]
     print(less_solution)
