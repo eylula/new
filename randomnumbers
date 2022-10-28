@@ -1,0 +1,64 @@
+import random
+import numpy as np
+
+last_num = int(input("enter your last number:")) #length
+
+random_num = [random.randint(0, last_num) for _ in range(last_num)]
+print(random_num)
+
+## 
+
+import math 
+
+print("total, average, square, reverse, sort, log, cumulative total, even numbers, greater than, less than")
+choose_operation = str(input("which operation do you need?: "))
+
+one = str("total")
+two = str("average")
+three = str("square")
+four = str("reverse")
+five = str("sort")
+six = str("log")
+seven = str("cumulative total")
+eight = str("even numbers")
+nine = str("greater than")
+ten = str("less than")
+
+if choose_operation == one:
+    print(sum(random_num))
+    
+elif choose_operation == two:
+    average = sum(random_num) / last_num
+    print(round(average, 2))
+    
+elif choose_operation == three:
+    print(np.square(random_num))
+    
+elif choose_operation == four:
+    #print(random_num.reverse())
+    
+elif choose_operation == five:
+    print(np.sort(random_num))
+    
+elif choose_operation == six:
+    print(np.log(random_num))
+    
+    #log_my_data = [math.log(x) for x in my_data]
+    #print(log_my_data)
+    
+elif choose_operation == seven:
+    print(np.cumsum(random_num))
+    
+elif choose_operation == eight:
+    even_num = [i for i in random_num if i %2==0]
+    print(even_num)
+    
+elif choose_operation == nine:
+    greater_num = int(input("give value: "))
+    greater_solution = [i for i in random_num if i > greater_num]
+    print(greater_solution)
+
+elif choose_operation = ten:
+    less_num = int(input("give value: "))
+    less_solution = [i for i in random_num if i < less_num]
+    print(less_solution)
