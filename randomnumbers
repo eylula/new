@@ -17,7 +17,7 @@ option = """
     #result = sum(random_num)
 
 def total(random_num):
-   return sum(random_num)
+   return total(random_num)
   
 #elif choose_operation == "average":
     #average = sum(random_num) / length
